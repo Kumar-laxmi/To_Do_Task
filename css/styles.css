@@ -1,15 +1,21 @@
-body {
-    overflow-y: hidden; /* Hide vertical scrollbar */
-    overflow-x: hidden; /* Hide horizontal scrollbar */
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #6a11cb;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
 }
 
-.login,
-.image {
-  min-height: 100vh;
-}
-
-.bg-image {
-  background-image: url('../image/4853433.jpg');
-  background-size: cover;
-  background-position: center center;
-}
+#list1 .form-control {
+  border-color: transparent;
+  }
+  #list1 .form-control:focus {
+  border-color: transparent;
+  box-shadow: none;
+  }
+  #list1 .select-input.form-control[readonly]:not([disabled]) {
+  background-color: #fbfbfb;
+  }

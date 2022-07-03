@@ -14,38 +14,74 @@
         <title>Todo Website</title>
     </head>
     <body>
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <!-- The image half -->
-                <div class="col-md-4 d-none d-md-flex bg-image">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-transparent mx-4 my-2">
-                                <a class="navbar-brand text-primary" href="#">Todo App</a>
-                            </nav>
-                        </div>
-                        <div class="row">
-                            <div class="card bg-transparent">
-                                <div class="card-body">
-                                    <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+        <section class="vh-100 gradient-custom">
+            <div class="container py-5 h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col">
+                        <div class="card" id="list1" style="border-radius: .75rem; background-color: #eff1f2;">
+                            <div class="card-body py-4 px-4 px-md-5">
+                                <p class="h1 text-center mt-3 mb-4 pb-3 text-primary">
+                                    <i class="fas fa-check-square me-1"></i>
+                                    <u>My Todo-s</u>
+                                </p>
+          
+                                <div class="pb-2">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-row align-items-center">
+                                                <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Add new...">
+                                                <a href="#!" data-mdb-toggle="tooltip" title="Set due date">
+                                                    <i class="fas fa-calendar-alt fa-lg me-3"></i>
+                                                </a>
+                                                <div>
+                                                    <button type="button" class="btn btn-primary">Add</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+          
+                                <hr class="my-4">
+          
+                                <div class="d-flex justify-content-end align-items-center mb-4 pt-2 pb-3">
+                                    <p class="small mb-0 me-2 text-muted">Filter</p>
+                                    <select class="select">
+                                        <option value="1">All</option>
+                                        <option value="2">Completed</option>
+                                        <option value="3">Active</option>
+                                        <option value="4">Has due date</option>
+                                    </select>
+                                    <p class="small mb-0 ms-4 me-2 text-muted">Sort</p>
+                                    <select class="select">
+                                        <option value="1">Added date</option>
+                                        <option value="2">Due date</option>
+                                    </select>
+                                    <a href="#!" style="color: #23af89;" data-mdb-toggle="tooltip" title="Ascending">
+                                        <i class="fas fa-sort-amount-down-alt ms-2"></i>
+                                    </a>
+                                </div>
+
+                                <ul class="list-group">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                      Cras justo odio
+                                      <span class="badge bg-primary badge-pill">14</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                      Dapibus ac facilisis in
+                                      <span class="badge bg-primary badge-pill">2</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                      Morbi leo risus
+                                      <span class="badge bg-primary badge-pill">1</span>
+                                    </li>
+                                  </ul>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
-        
-        
-                <!-- The content half -->
-                <div class="col-md-8 bg-light">
-                    <div class="login d-flex align-items-center py-5">
-        
-                        
-        
-                    </div>
-                </div><!-- End -->
-        
             </div>
-        </div>
+        </section>
         
 
 
