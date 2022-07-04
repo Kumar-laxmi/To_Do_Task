@@ -1,100 +1,26 @@
-<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="utf-8">
+		<title>Todo List</title>
+		<link rel="stylesheet" href="./css/styles.css">
+	</head>
+	<body>
+		<h1>Plain JavaScript To-Do List</h1>
+		<h2>Quick and Dirty</h2>
 
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="./css/styles.css">
-        <link rel="stylesheet" href="./css/time.css">
-        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bttn.css/0.2.4/bttn.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+		<div class="container">
+  
+  			<form  action="#">
+    			<input type="text" name="item" id="item" placeholder="Add New" />
+			</form>  
 
-        <title>Todo Website</title>
-    </head>
-    <body>
-        <section class="vh-100 gradient-custom">
-            <div class="container py-5 h-100">
-                <div class="row d-flex justify-content-center align-items-center h-100">
-                    <div class="col">
-                        <div class="card bg-dark" id="list1" style="border-radius: .75rem;">
-                            <div class="card-body py-4 px-4 px-md-5">
-                                <p class="h1 text-center mt-3 mb-4 pb-3 text-primary">
-                                    <i class="fas fa-check-square me-1"></i>
-                                    <u>My Todo-s</u>
-                                </p>
-          
-                                <div class="pb-2">
-                                    <form>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="wrapper">
-                                                    <input spellcheck="false" type="text" name="TITLE" id="TITLE" required />
-                                                    <div class="label">Title</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="wrapper">
-                                                    <input spellcheck="false" type="date" name="DATE" required />
-                                                    <div class="label">Date Due</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row my-3">
-                                            <div class="col-md-8">
-                                                <div class="wrapper">
-                                                    <input spellcheck="false" type="textarea" name="DESCRIPTION" required />
-                                                    <div class="label">Description</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="col-md-4">
-                                                    <button class="button" ID="push">
-                                                        <span class="button-content">Add<i class="fa-solid fa-plus"></i></span>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-          
-                                <hr class="my-4">
-          
+			<ul id="list">
+				<!-- Empty list to hold tasks -->
+			</ul>
 
-                                <div class="tasks"></div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-
-
-
-        
-        <!-- ===== MAIN JS ===== -->
-        <script src="./js/scripts.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    </body>
+		</div>
+	
+		<script src="./js/scripts.js"></script>
+	</body>
 </html>
-<!--
-    <form>
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="wrapper">
-                                                    <input spellcheck="false" />
-                                                    <div class="label">Title</div>
-                                                    <span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <input type="text" class="form-control" placeholder="Last name">
-                                            </div>
-                                        </div>
-                                    </form>
--->
+

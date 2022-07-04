@@ -1,237 +1,78 @@
-.gradient-custom {
-  /* fallback for old browsers */
-  background: #6a11cb;
-  
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
-  
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+
+body {
+  background: #eee;
+  color: #444;
+  font-family: "Helvetica", arial, sans-serif;
 }
 
-#list1 .form-control {
-  border-color: transparent;
-  }
-  #list1 .form-control:focus {
-  border-color: transparent;
-  box-shadow: none;
-  }
-  #list1 .select-input.form-control[readonly]:not([disabled]) {
-  background-color: #fbfbfb;
-}
-
-.wrapper {
-  position: relative;
-  display: flex;
-  height: 4rem;
-}
-
-.label {
-  position: absolute;
-  top: 50%;
-  left: 0.65rem;
-  transform: translateY(-50%);
-  color: #888;
-  padding: 0.25rem 0.5rem;
-  pointer-events: none;
-  transition: all 0.35s;
-}
-
-.material-icons {
-  position: absolute;
-  top: 50%;
-  right: 1rem;
-  transform: translateY(-50%);
-  font-size: 1.675rem;
-  color: #888;
-  transition: all 0.35s;
+.container {
+  background: #fff;
+  max-width: 600px;
+  width: 100%;
+  display: table;
+  margin: 0 auto;
+  margin-top: 40px;
+  border: 1px solid #cfcbcc;
 }
 
 input {
-  height: inherit;
-  width: 25rem;
-  border: 2px solid #888;
-  border-radius: 0.5rem;
-  outline: none;
-  background: #212529;
-  color: #f7f7f7;
-  font-size: 1rem;
-  transition: all 0.35s;
+  border: none;
+  display: block;
+  width: 98.4%;
+  line-height: 1.5;
+  padding: 8px 0 8px 10px;
+  border-bottom: 1px solid #cfcbcc;
+  outline: 0;
 }
 
-input:focus {
-  border-color: #8f44fd;
+h1, h2 {
+  text-align: center;
+  margin-bottom: 0px;
+  line-height: 1;
 }
 
-input:focus ~ .label {
-  background: #212529;
-  color: rgba(255,255,255,0.75);
-  transform: translateY(-2.875rem);
+h2 {
+  color: gray;
 }
 
-input:valid ~ .label {
-  background: #212529;
-  color: rgba(255,255,255,0.75);
-  transform: translateY(-2.875rem);
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
-
-input[type=date] {
-  height: inherit;
-  width: 25rem;
-  border: 2px solid #888;
-  border-radius: 0.5rem;
-  outline: none;
-  background: #212529;
-  color: #f7f7f7;
-  font-size: 1rem;
-  transition: all 0.35s;
-}
-
-input[type=date]:required:invalid::-webkit-datetime-edit {
-  color: transparent;
-}
-
-input[type=date]:focus {
-  border-color: #8f44fd;
-}
-
-input[type=date]:focus ~ .label {
-  background: #212529;
-  color: rgba(255,255,255,0.75);
-  transform: translateY(-2.875rem);
-}
-
-input[type=date]:focus::-webkit-datetime-edit ~ .label {
-  color: white;
-}
-
-input[type=date]:valid ~ .label {
-  background: #212529;
-  color: rgba(255,255,255,0.75);
-  transform: translateY(-2.875rem);
-}
-
-/* Hide Calendar Icon In Chrome */
-input[type="date"]::-webkit-inner-spin-button,
-input[type="date"]::-webkit-calendar-picker-indicator {
-    display: none;
-    -webkit-appearance: none;
-}
-
-input[type=textarea] {
-  height: inherit;
-  width: 50rem;
-  border: 2px solid #888;
-  border-radius: 0.5rem;
-  outline: none;
-  background: #212529;
-  color: #f7f7f7;
-  font-size: 1rem;
-  transition: all 0.35s;
-}
-
-input[type=textarea]:focus {
-  border-color: #8f44fd;
-}
-
-input[type=textarea]:focus ~ .label {
-  background: #212529;
-  color: rgba(255,255,255,0.75);
-  transform: translateY(-2.875rem);
-}
-
-input[type=textarea]:valid ~ .label {
-  background: #212529;
-  color: rgba(255,255,255,0.75);
-  transform: translateY(-2.875rem);
-}
-
-.button {
-  position: relative;
-  overflow: hidden;
-  height: 3rem;
-  padding: 0 2rem;
-  border-radius: 1.5rem;
-  background: #3d384e;
-  background-size: 400%;
-  color: #ffffff;
-}
-
-.button:hover::before {
-  transform: scaleX(1);
-}
-
-.button-content {
-  position: relative;
-  z-index: 1;
-}
-
-.button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: scaleX(0);
-  transform-origin: 0 50%;
-  width: 100%;
-  height: inherit;
-  border-radius: inherit;
-  background: linear-gradient(
-      83.2deg,
-      rgba(150, 93, 233, 1) 10.8%,
-      rgba(99, 88, 238, 1) 94.3%
-  );
-  transition: all 0.475s;
-}
-
-
-
-.bg-purple {
-  background-color: #8f44fd;
-  color: white;
-}
-
-.list-group {
-  border: 2px solid #888;
-  outline: none;
-  background: #212529;
-  color: #f7f7f7;
-  font-size: 1rem;
-}
-
-.list-group-item {
-  border: 2px solid #888;
-  outline: none;
-  background: #212529;
-  color: #f7f7f7;
-  font-size: 1rem;
-}
-
-
-#tasks{
-  border-radius: 10px;
-  width: 100%;
-  position: relative;
-  background-color: #ffffff;
-  padding: 30px 20px;
-  margin-top: 10px;
-}
-
-.task{
-  border-radius: 5px;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid #939697;
-  cursor: pointer;
-  background-color: #c5e1e6;
-  height: 50px;
-  margin-bottom: 8px;
-  padding: 5px 10px;
-  display: flex;
-}
-.task span{
-  font-family: 'Poppins',sans-serif;
-  font-size: 15px;
+ul li {
+  color: #899098;
   font-weight: 400;
+  border-bottom: 1px solid #cfcbcc;
+  line-height: 1.5;
+  padding: 8px 0;
+}
+ul li:before {
+  content: "□";
+  padding: 10px 10px;
+  font-size: 20px;
+}
+ul li:hover {
+  text-decoration: line-through;
+  cursor: pointer;
+}
+ul li:last-child {
+  border-bottom: none;
+}
+
+.checked {
+  color: green;
+}
+.checked:before {
+  content: "✓";
+  padding: 10px 10px;
+  font-size: 20px;
+}
+.checked:hover {
+  text-decoration: none;
+}
+.checked:hover:after {
+  content: "(remove)";
+  color: tomato;
+  text-align: right;
 }
